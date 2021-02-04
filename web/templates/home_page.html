@@ -8,5 +8,11 @@
 <body>
     <h1>Main page</h1>
     <p>User: {{ .Name }}</p>
+    
+    {{ if eq .Name "Bob" }} 
+    <span>Hi Bob</span>
+    {{ else }}
+    <span>Hi not Bob</span>
+    {{ end }}
 </body>
 </html>
